@@ -103,7 +103,10 @@ for item in resultados:
     if not colores_disp:
         continue
     total = sum(c["cantidad"] for c in colores_disp)
-    badges = "".join(color_badge(c["color"], c["cantidad"]) for c in colores_disp)
+    badges = "".join(
+        color_badge(c["color"], c["cantidad"], c.get("ate", 0), c.get("cjm", 0))
+        for c in colores_disp
+    )
     total_label = f"Total: {total} unidad{'es' if total != 1 else ''}"
 
     st.markdown(f"""

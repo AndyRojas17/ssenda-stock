@@ -91,9 +91,13 @@ COLOR_MAP = {
     "beige": "#C8A97E", "crema": "#FEFCBF",
 }
 
-DATA_DIR   = os.path.join(os.path.dirname(__file__), "data")
-STOCK_FILE = os.path.join(DATA_DIR, "stock.json")
-META_FILE  = os.path.join(DATA_DIR, "meta.json")
+DATA_DIR      = os.path.join(os.path.dirname(__file__), "data")
+STOCK_FILE    = os.path.join(DATA_DIR, "stock.json")
+META_FILE     = os.path.join(DATA_DIR, "meta.json")
+ATE_FILE      = os.path.join(DATA_DIR, "stock_ate.json")
+CJM_FILE      = os.path.join(DATA_DIR, "stock_cjm.json")
+META_ATE_FILE = os.path.join(DATA_DIR, "meta_ate.json")
+META_CJM_FILE = os.path.join(DATA_DIR, "meta_cjm.json")
 
 
 def load_stock():
@@ -101,6 +105,63 @@ def load_stock():
         return []
     with open(STOCK_FILE, encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_meta():
+    if not os.path.exists(META_FILE):
+        return None
+    with open(META_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_meta_almacen(almacen):
+    """Carga meta de un almacén específico: 'ate' o 'cjm'."""
+    path = META_ATE_FILE if almacen == "ate" else META_CJM_FILE
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _combine_stocks(ate_records, cjm_records):
+    """Combina los stocks de Tienda Ate y Cajamarquilla sumando por modelo+color."""
+    combined = {}  # modelo -> {color -> {ate, cjm}}
+
+    for item in ate_records:
+        modelo = item["modelo"]
+        if modelo not in combined:
+            combined[modelo] = {}
+        for c in item["colores"]:
+            color = c["color"]
+            if color not in combined[modelo]:
+                combined[modelo][color] = {"ate": 0, "cjm": 0}
+            combined[modelo][color]["ate"] += c.get("cantidad", 0)
+
+    for item in cjm_records:
+        modelo = item["modelo"]
+        if modelo not in combined:
+            combined[modelo] = {}
+        for c in item["colores"]:
+            color = c["color"]
+            if color not in combined[modelo]:
+                combined[modelo][color] = {"ate": 0, "cjm": 0}
+            combined[modelo][color]["cjm"] += c.get("cantidad", 0)
+
+    result = []
+    for modelo, colores_dict in combined.items():
+        colores = []
+        for color, vals in colores_dict.items():
+            ate = vals["ate"]
+            cjm = vals["cjm"]
+            colores.append({
+                "color": color,
+                "cantidad": ate + cjm,
+                "ate": ate,
+                "cjm": cjm,
+            })
+        result.append({"modelo": modelo, "colores": colores})
+
+    return result
 
 
 def _commit_to_github(path, content_str):
@@ -126,36 +187,68 @@ def _commit_to_github(path, content_str):
             payload["sha"] = sha
         requests.put(url, headers=headers, json=payload, timeout=10)
     except Exception:
-        pass  # Si falla GitHub, el archivo local ya fue guardado
+        pass
 
 
-def save_stock(records, filename, count):
+def save_almacen(records, filename, count, almacen):
+    """
+    Guarda el stock de un almacén ('ate' o 'cjm'), recombina ambos
+    y actualiza stock.json + meta.json globales.
+    """
     os.makedirs(DATA_DIR, exist_ok=True)
-    stock_str = json.dumps(records, ensure_ascii=False, indent=2)
-    with open(STOCK_FILE, "w", encoding="utf-8") as f:
-        f.write(stock_str)
-
     from datetime import datetime, timezone, timedelta
     peru = timezone(timedelta(hours=-5))
+
+    stock_path = ATE_FILE      if almacen == "ate" else CJM_FILE
+    meta_path  = META_ATE_FILE if almacen == "ate" else META_CJM_FILE
+    other_path = CJM_FILE      if almacen == "ate" else ATE_FILE
+
+    # Guardar stock del almacén
+    stock_str = json.dumps(records, ensure_ascii=False, indent=2)
+    with open(stock_path, "w", encoding="utf-8") as f:
+        f.write(stock_str)
+
     meta = {
         "last_upload": datetime.now(peru).strftime("%d/%m/%Y %H:%M"),
         "filename": filename,
         "modelos": count,
     }
     meta_str = json.dumps(meta, ensure_ascii=False)
-    with open(META_FILE, "w", encoding="utf-8") as f:
+    with open(meta_path, "w", encoding="utf-8") as f:
         f.write(meta_str)
 
-    # Persistir en GitHub para sobrevivir redeploys
-    _commit_to_github("data/stock.json", stock_str)
-    _commit_to_github("data/meta.json", meta_str)
+    # Cargar el otro almacén para combinar
+    other_records = []
+    if os.path.exists(other_path):
+        with open(other_path, encoding="utf-8") as f:
+            other_records = json.load(f)
 
+    if almacen == "ate":
+        combined = _combine_stocks(records, other_records)
+    else:
+        combined = _combine_stocks(other_records, records)
 
-def load_meta():
-    if not os.path.exists(META_FILE):
-        return None
-    with open(META_FILE, encoding="utf-8") as f:
-        return json.load(f)
+    combined_str = json.dumps(combined, ensure_ascii=False, indent=2)
+    with open(STOCK_FILE, "w", encoding="utf-8") as f:
+        f.write(combined_str)
+
+    # Meta combinada
+    combined_meta = {
+        "last_upload": datetime.now(peru).strftime("%d/%m/%Y %H:%M"),
+        "filename": filename,
+        "modelos": len(combined),
+        "ate": load_meta_almacen("ate"),
+        "cjm": load_meta_almacen("cjm"),
+    }
+    combined_meta_str = json.dumps(combined_meta, ensure_ascii=False)
+    with open(META_FILE, "w", encoding="utf-8") as f:
+        f.write(combined_meta_str)
+
+    # Persistir todo en GitHub
+    _commit_to_github(f"data/stock_{almacen}.json", stock_str)
+    _commit_to_github(f"data/meta_{almacen}.json", meta_str)
+    _commit_to_github("data/stock.json", combined_str)
+    _commit_to_github("data/meta.json", combined_meta_str)
 
 
 def _resolver_colores(nombre):
@@ -174,7 +267,6 @@ def _resolver_colores(nombre):
                 return mv
         return None
 
-    # Si tiene guion → separar primero (NRG-ROJ, NEGR-AZU, ROJ-BLAN…)
     if "-" in nombre:
         colores = []
         for parte in nombre.split("-"):
@@ -184,7 +276,6 @@ def _resolver_colores(nombre):
         if colores:
             return colores
 
-    # Nombre simple o con espacio (AZUL MET, ROSA SAK…)
     color_full = buscar(norm(nombre))
     if color_full:
         return [color_full]
@@ -196,7 +287,6 @@ def _dot_style(colores_css):
     """Genera el CSS de background para el círculo (sólido o gradiente)."""
     if len(colores_css) == 1:
         return f"background:{colores_css[0]}"
-    # Gradiente diagonal para 2 o más colores
     stops = []
     step = 100 // len(colores_css)
     for i, c in enumerate(colores_css):
@@ -206,7 +296,7 @@ def _dot_style(colores_css):
     return f"background:linear-gradient(135deg, {', '.join(stops)})"
 
 
-def color_badge(color, cantidad):
+def color_badge(color, cantidad, ate=0, cjm=0):
     colores_css = _resolver_colores(color)
     dot_bg     = _dot_style(colores_css)
     es_claro   = all(c in ("#EDF2F7", "#FEFCBF", "#CBD5E0") for c in colores_css)
@@ -215,6 +305,22 @@ def color_badge(color, cantidad):
     opacity    = "opacity:0.45;" if sin_stock else ""
     cant_label = str(cantidad) if not sin_stock else "Sin stock"
     cant_color = "#718096" if not sin_stock else "#CBD5E0"
+
+    # Desglose por almacén
+    breakdown_html = ""
+    if not sin_stock and (ate != 0 or cjm != 0):
+        parts = []
+        if ate > 0:
+            parts.append(f"Ate&nbsp;{ate}")
+        if cjm > 0:
+            parts.append(f"Cajam&nbsp;{cjm}")
+        if parts:
+            breakdown_html = (
+                f'<span style="font-size:0.72rem;color:#A0AEC0;'
+                f'padding-left:6px;border-left:1px solid #E2E8F0;">'
+                f'{" · ".join(parts)}</span>'
+            )
+
     return (
         f'<span style="display:inline-flex;align-items:center;gap:8px;'
         f'background:#F7FAFC;border-radius:20px;padding:7px 16px;margin:4px;'
@@ -223,6 +329,7 @@ def color_badge(color, cantidad):
         f'display:inline-block;border:{border};flex-shrink:0"></span>'
         f'<strong style="color:#2D3748">{color}</strong>'
         f'<span style="color:{cant_color};font-weight:600">{cant_label}</span>'
+        f'{breakdown_html}'
         f"</span>"
     )
 
