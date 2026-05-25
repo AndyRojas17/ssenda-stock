@@ -58,29 +58,33 @@ STYLES = """
 
 COLOR_MAP = {
     # Negros
-    "negro": "#2D3748", "negr": "#2D3748", "neg": "#2D3748", "nrg": "#2D3748",
-    "ngr": "#2D3748", "ng": "#2D3748", "black": "#2D3748",
+    "negro": "#2D3748", "negr": "#2D3748", "neg": "#2D3748",
+    "nrg": "#2D3748", "ngr": "#2D3748", "ng": "#2D3748", "black": "#2D3748",
     # Rojos
-    "rojo": "#E53E3E", "roj": "#E53E3E", "red": "#E53E3E",
+    "rojo": "#E53E3E", "roj": "#E53E3E", "rj": "#E53E3E", "red": "#E53E3E",
     # Blancos
-    "blanco": "#EDF2F7", "blan": "#EDF2F7", "bla": "#EDF2F7", "white": "#EDF2F7",
+    "blanco": "#EDF2F7", "blan": "#EDF2F7", "blc": "#EDF2F7",
+    "bla": "#EDF2F7", "bl": "#EDF2F7", "white": "#EDF2F7",
     # Azules
-    "azul": "#3182CE", "azu": "#3182CE", "blue": "#3182CE", "azul met": "#2B6CB0",
-    "celeste": "#63B3ED",
+    "azul": "#3182CE", "azu": "#3182CE", "az": "#3182CE",
+    "blue": "#3182CE", "azul met": "#2B6CB0", "celeste": "#63B3ED",
     # Verdes
-    "verde": "#38A169", "verd": "#38A169", "green": "#38A169",
+    "verde": "#38A169", "verd": "#38A169", "ver": "#38A169",
+    "vrd": "#38A169", "green": "#38A169",
     # Amarillos
     "amarillo": "#D69E2E", "ama": "#D69E2E", "yellow": "#D69E2E",
     # Naranja
-    "naranja": "#DD6B20", "nar": "#DD6B20", "orange": "#DD6B20",
+    "naranja": "#DD6B20", "nar": "#DD6B20", "anar": "#DD6B20",
+    "anrj": "#DD6B20", "ana": "#DD6B20", "an": "#DD6B20", "orange": "#DD6B20",
     # Grises
-    "gris": "#718096", "gri": "#718096", "gray": "#718096", "grey": "#718096",
-    "plateado": "#A0AEC0", "silver": "#A0AEC0",
+    "gris": "#718096", "gri": "#718096", "gr": "#718096",
+    "gray": "#718096", "grey": "#718096", "plateado": "#A0AEC0", "silver": "#A0AEC0",
     # Rosas
     "rosa": "#D53F8C", "ros": "#D53F8C", "rosa sak": "#ED64A6", "pink": "#D53F8C",
     # Morados
     "morado": "#805AD5", "purple": "#805AD5",
-    # Dorados / Marrones
+    # Bronce / Dorado / Marrones
+    "bronce": "#CD7F32", "br": "#CD7F32", "bron": "#CD7F32",
     "dorado": "#B7791F", "gold": "#B7791F",
     "marron": "#744210", "cafe": "#744210", "brown": "#744210",
     "vinotinto": "#822727",
