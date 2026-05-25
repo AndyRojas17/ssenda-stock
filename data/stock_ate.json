@@ -1,1 +1,259 @@
-[]
+[
+  {
+    "modelo": "200X7SR",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1
+      },
+      {
+        "color": "NEG-VERD",
+        "cantidad": 1
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "CHACARERA 200",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 3
+      }
+    ]
+  },
+  {
+    "modelo": "DURO 150",
+    "colores": [
+      {
+        "color": "NEGR-AZU",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "modelo": "DURO 200 CB",
+    "colores": [
+      {
+        "color": "NRG-ROJ",
+        "cantidad": 1
+      },
+      {
+        "color": "ROJ-BLAN",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "DURO 250 TNR",
+    "colores": [
+      {
+        "color": "BLANCO",
+        "cantidad": 3
+      }
+    ]
+  },
+  {
+    "modelo": "ECO FINITI 150",
+    "colores": [
+      {
+        "color": "ROJO",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "FINITI 150 SPORT",
+    "colores": [
+      {
+        "color": "NEG-AZUL",
+        "cantidad": 0
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "JIMMY 150",
+    "colores": [
+      {
+        "color": "AZUL MET",
+        "cantidad": 12
+      },
+      {
+        "color": "ROSA SAK",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "LEO 110-N PLUS",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "modelo": "MATRIX VIII 150",
+    "colores": [
+      {
+        "color": "BLANCO",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "modelo": "MONSTER 250R",
+    "colores": [
+      {
+        "color": "NGR-GR",
+        "cantidad": 1
+      },
+      {
+        "color": "NGR-RJ",
+        "cantidad": 1
+      },
+      {
+        "color": "NGR-VRD",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "PATAGONIA 250V8",
+    "colores": [
+      {
+        "color": "GRIS",
+        "cantidad": 4
+      }
+    ]
+  },
+  {
+    "modelo": "P-TERRA 200",
+    "colores": [
+      {
+        "color": "GRI-ANRJ",
+        "cantidad": 2
+      },
+      {
+        "color": "NG-BL-AN",
+        "cantidad": 1
+      },
+      {
+        "color": "NGR-RJ",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "modelo": "RVS 175 EFI",
+    "colores": [
+      {
+        "color": "AZUL",
+        "cantidad": 2
+      },
+      {
+        "color": "GRIS",
+        "cantidad": 3
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 4
+      }
+    ]
+  },
+  {
+    "modelo": "SANTANA 250",
+    "colores": [
+      {
+        "color": "ROJO",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "modelo": "SS200-X7",
+    "colores": [
+      {
+        "color": "NEG-ROJ",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "SS250-ATV",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "SS300-X7 EFI",
+    "colores": [
+      {
+        "color": "NEG-ANAR",
+        "cantidad": 4
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": 1
+      },
+      {
+        "color": "NEGR-VER",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "TY150T-H",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "URBANKAR 150",
+    "colores": [
+      {
+        "color": "AZUL",
+        "cantidad": 3
+      }
+    ]
+  },
+  {
+    "modelo": "VIPER 200 NKS",
+    "colores": [
+      {
+        "color": "BLC-ANAR",
+        "cantidad": 3
+      },
+      {
+        "color": "NEGR-ANA",
+        "cantidad": 1
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 3
+      }
+    ]
+  }
+]
