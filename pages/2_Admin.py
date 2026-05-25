@@ -1,8 +1,13 @@
 import streamlit as st
 import pandas as pd
-import os, sys
+import os, sys, traceback
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-from utils import render_header, render_footer, save_almacen, load_meta_almacen
+try:
+    from utils import render_header, render_footer, save_almacen, load_meta_almacen
+except Exception as _e:
+    st.error(f"**ERROR IMPORTANDO UTILS:** `{type(_e).__name__}: {_e}`")
+    st.code(traceback.format_exc())
+    st.stop()
 
 st.set_page_config(
     page_title="Admin — Ssenda",
