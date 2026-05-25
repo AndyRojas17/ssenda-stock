@@ -58,7 +58,8 @@ STYLES = """
 
 COLOR_MAP = {
     # Negros
-    "negro": "#2D3748", "negr": "#2D3748", "neg": "#2D3748", "black": "#2D3748",
+    "negro": "#2D3748", "negr": "#2D3748", "neg": "#2D3748", "nrg": "#2D3748",
+    "ngr": "#2D3748", "ng": "#2D3748", "black": "#2D3748",
     # Rojos
     "rojo": "#E53E3E", "roj": "#E53E3E", "red": "#E53E3E",
     # Blancos
@@ -169,12 +170,7 @@ def _resolver_colores(nombre):
                 return mv
         return None
 
-    # Intentar el nombre completo primero (ej: "azul met", "rosa sak")
-    color_full = buscar(norm(nombre))
-    if color_full:
-        return [color_full]
-
-    # Si tiene guion, separar y resolver cada parte
+    # Si tiene guion → separar primero (NRG-ROJ, NEGR-AZU, ROJ-BLAN…)
     if "-" in nombre:
         colores = []
         for parte in nombre.split("-"):
@@ -183,6 +179,11 @@ def _resolver_colores(nombre):
                 colores.append(c)
         if colores:
             return colores
+
+    # Nombre simple o con espacio (AZUL MET, ROSA SAK…)
+    color_full = buscar(norm(nombre))
+    if color_full:
+        return [color_full]
 
     return ["#CBD5E0"]
 
