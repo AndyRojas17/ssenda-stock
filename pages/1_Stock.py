@@ -106,7 +106,7 @@ for item in resultados:
                 margin-bottom:12px;border:1.5px solid #E2E8F0;
                 box-shadow:0 1px 4px rgba(0,0,0,0.06)">
         <div style="font-size:1.1rem;font-weight:700;color:#1A202C;margin-bottom:14px;
-                    border-left:3px solid #1A56DB;padding-left:10px">
+                    border-left:3px solid #F5C200;padding-left:10px">
             {item['modelo']}
         </div>
         <div style="flex-wrap:wrap">{badges}</div>

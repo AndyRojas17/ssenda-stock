@@ -2,43 +2,51 @@ import streamlit as st
 import json
 import os
 
-PRIMARY   = "#1A56DB"
-PRIMARY_D = "#1040A0"
+PRIMARY   = "#F5C200"
+DARK      = "#1A1A1A"
 
 STYLES = """
 <style>
 .stApp { background-color: #FFFFFF; }
+
+/* ── Métricas ── */
 .metric-card {
     background: #FAFAFA; border-radius: 10px; padding: 18px 22px;
-    border: 1px solid #EEEEEE; border-left: 4px solid #1A56DB;
+    border: 1px solid #EEEEEE; border-left: 4px solid #F5C200;
     text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-.metric-card.green  { border-left-color: #00A651; }
-.metric-card.gray   { border-left-color: #888888; }
+.metric-card.green { border-left-color: #00A651; }
+.metric-card.gray  { border-left-color: #888888; }
 .metric-value { font-size: 2rem; font-weight: 800; color: #1A1A1A; line-height: 1; }
 .metric-label { font-size: 0.75rem; color: #888888; text-transform: uppercase;
                 letter-spacing: 0.8px; margin-top: 6px; }
+
+/* ── Botones ── */
 .stButton > button {
-    background: linear-gradient(135deg, #1A56DB, #1040A0) !important;
-    color: white !important; border: none !important; border-radius: 8px !important;
-    font-size: 1.1rem !important; font-weight: 700 !important;
+    background: #F5C200 !important;
+    color: #1A1A1A !important; border: none !important; border-radius: 8px !important;
+    font-size: 1rem !important; font-weight: 800 !important;
     padding: 14px 40px !important; width: 100% !important;
     letter-spacing: 0.5px !important; transition: all 0.2s !important;
 }
 .stButton > button:hover {
-    background: linear-gradient(135deg, #2563EB, #1A56DB) !important;
+    background: #E0AE00 !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 4px 20px rgba(26,86,219,0.4) !important;
+    box-shadow: 0 4px 20px rgba(245,194,0,0.5) !important;
 }
+
+/* ── Upload card ── */
 .upload-card {
     background: #FAFAFA; border: 1.5px solid #E0E0E0; border-radius: 10px;
     padding: 20px; margin-bottom: 12px;
 }
 .upload-card h4 {
-    color: #1A56DB; font-size: 0.85rem; font-weight: 700;
+    color: #1A1A1A; font-size: 0.85rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 1px; margin: 0 0 4px 0;
 }
 .upload-card p { color: #888888; font-size: 0.78rem; margin: 0; }
+
+/* ── Footer ── */
 .ssenda-footer {
     text-align: center; color: #AAAAAA; font-size: 0.75rem;
     margin-top: 40px; padding-top: 16px; border-top: 1px solid #EEEEEE;
@@ -156,15 +164,17 @@ def color_badge(color, cantidad):
 def render_header(subtitle=""):
     st.markdown(STYLES, unsafe_allow_html=True)
     st.markdown(f"""
-    <div style="display:flex;align-items:center;gap:20px;padding-bottom:0">
-        <div style="font-size:2rem;font-weight:900;color:#1A56DB;letter-spacing:-1px;line-height:1">
-            Ssenda
+    <div style="background:#1A1A1A;border-radius:10px;padding:18px 24px;
+                display:flex;align-items:center;gap:16px;margin-bottom:24px">
+        <div style="font-size:1.7rem;font-weight:900;color:#F5C200;
+                    letter-spacing:-1px;line-height:1;font-style:italic">
+            S·SENDA
         </div>
-        <div style="font-size:0.9rem;color:#555555;padding-top:6px">
-            {subtitle if subtitle else 'Panel de herramientas'}
+        <div style="width:1px;height:32px;background:#444"></div>
+        <div style="font-size:0.88rem;color:#CCCCCC;font-weight:500">
+            {subtitle if subtitle else 'Panel interno de ventas'}
         </div>
     </div>
-    <div style="border-top:2.5px solid #1A56DB;margin:14px 0 24px 0"></div>
     """, unsafe_allow_html=True)
 
 
