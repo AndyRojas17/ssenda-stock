@@ -1,4 +1,5 @@
 import streamlit as st
+import base64, os
 from utils import render_header, render_footer, load_meta
 
 st.set_page_config(
@@ -9,6 +10,18 @@ st.set_page_config(
 )
 
 render_header("Panel de ventas")
+
+def _svg_b64(filename):
+    path = os.path.join(os.path.dirname(__file__), "assets", filename)
+    if not os.path.exists(path):
+        return ""
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+icon_stock = _svg_b64("icon_stock.svg")
+icon_carga = _svg_b64("icon_carga.svg")
+img_stock = f'<img src="data:image/svg+xml;base64,{icon_stock}" style="height:52px;width:auto">' if icon_stock else "🔍"
+img_carga = f'<img src="data:image/svg+xml;base64,{icon_carga}" style="height:52px;width:auto">' if icon_carga else "📂"
 
 st.markdown("## Bienvenido al panel de Ssenda")
 st.markdown('<p style="color:#666;margin-top:-12px">Selecciona una herramienta para comenzar</p>',
@@ -24,7 +37,7 @@ if meta:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-st.markdown("""
+st.markdown(f"""
 <style>
 .s-card {
     display: block; text-decoration: none;
@@ -58,7 +71,7 @@ st.markdown("""
 <div class="s-cards-grid">
 
   <a href="/Stock" class="s-card">
-    <div class="s-card-icon">🔍</div>
+    <div class="s-card-icon">{img_stock}</div>
     <div class="s-card-title">Consultar Stock</div>
     <div class="s-card-desc">
       Busca cualquier modelo de moto y consulta la disponibilidad
@@ -68,7 +81,7 @@ st.markdown("""
   </a>
 
   <a href="/Admin" class="s-card">
-    <div class="s-card-icon">📂</div>
+    <div class="s-card-icon">{img_carga}</div>
     <div class="s-card-title">Cargar Stock</div>
     <div class="s-card-desc">
       Panel de administración. Carga el Excel de stock diario
