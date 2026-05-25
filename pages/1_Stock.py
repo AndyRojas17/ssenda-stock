@@ -32,12 +32,17 @@ if not stock:
     render_footer()
     st.stop()
 
-query = st.text_input(
-    "",
-    placeholder="🔍  Buscar modelo...  ej: X7 200, CBF 125, AKT TT",
-    key="search_query",
-    label_visibility="collapsed",
-)
+with st.form("buscar_form"):
+    col_input, col_btn = st.columns([5, 1])
+    with col_input:
+        query = st.text_input(
+            "",
+            placeholder="ej: X7 200, Finiti 150, Duro 250...",
+            key="search_query",
+            label_visibility="collapsed",
+        )
+    with col_btn:
+        buscar = st.form_submit_button("🔍  Buscar", use_container_width=True)
 
 st.markdown('<div style="margin-bottom:20px"></div>', unsafe_allow_html=True)
 
