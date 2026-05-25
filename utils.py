@@ -153,43 +153,68 @@ def load_meta():
         return json.load(f)
 
 
-def _resolver_color(nombre):
-    """Devuelve el color CSS para un nombre de color (simple o combinado como NEGR-AZU)."""
+def _resolver_colores(nombre):
+    """Devuelve lista de colores CSS. Si el nombre tiene guion (NRG-ROJ) retorna uno por parte."""
     import unicodedata
-    def normalizar(t):
+    def norm(t):
         t = t.lower().strip()
         return "".join(c for c in unicodedata.normalize("NFD", t)
                        if unicodedata.category(c) != "Mn")
 
-    key = normalizar(nombre)
-    if key in COLOR_MAP:
-        return COLOR_MAP[key]
-    # Buscar por prefijo (ej: "negr-azu" → buscar "negr")
-    partes = key.replace("-", " ").split()
-    for parte in partes:
-        if parte in COLOR_MAP:
-            return COLOR_MAP[parte]
-        # Buscar por inicio de clave
-        for map_key, map_val in COLOR_MAP.items():
-            if map_key.startswith(parte) or parte.startswith(map_key):
-                return map_val
-    return "#CBD5E0"
+    def buscar(key):
+        if key in COLOR_MAP:
+            return COLOR_MAP[key]
+        for mk, mv in COLOR_MAP.items():
+            if mk.startswith(key) or key.startswith(mk):
+                return mv
+        return None
+
+    # Intentar el nombre completo primero (ej: "azul met", "rosa sak")
+    color_full = buscar(norm(nombre))
+    if color_full:
+        return [color_full]
+
+    # Si tiene guion, separar y resolver cada parte
+    if "-" in nombre:
+        colores = []
+        for parte in nombre.split("-"):
+            c = buscar(norm(parte))
+            if c and c not in colores:
+                colores.append(c)
+        if colores:
+            return colores
+
+    return ["#CBD5E0"]
+
+
+def _dot_style(colores_css):
+    """Genera el CSS de background para el círculo (sólido o gradiente)."""
+    if len(colores_css) == 1:
+        return f"background:{colores_css[0]}"
+    # Gradiente diagonal para 2 o más colores
+    stops = []
+    step = 100 // len(colores_css)
+    for i, c in enumerate(colores_css):
+        ini = i * step
+        fin = (i + 1) * step if i < len(colores_css) - 1 else 100
+        stops.append(f"{c} {ini}% {fin}%")
+    return f"background:linear-gradient(135deg, {', '.join(stops)})"
 
 
 def color_badge(color, cantidad):
-    dot = _resolver_color(color)
-    es_claro = dot in ("#EDF2F7", "#FEFCBF", "#CBD5E0")
-    border = "1px solid #CBD5E0" if es_claro else "1px solid rgba(0,0,0,0.15)"
-    sin_stock = cantidad == 0
-    bg = "#F7FAFC" if not sin_stock else "#F7FAFC"
-    opacity = "opacity:0.45;" if sin_stock else ""
+    colores_css = _resolver_colores(color)
+    dot_bg     = _dot_style(colores_css)
+    es_claro   = all(c in ("#EDF2F7", "#FEFCBF", "#CBD5E0") for c in colores_css)
+    border     = "1px solid #CBD5E0" if es_claro else "1px solid rgba(0,0,0,0.15)"
+    sin_stock  = cantidad == 0
+    opacity    = "opacity:0.45;" if sin_stock else ""
     cant_label = str(cantidad) if not sin_stock else "Sin stock"
     cant_color = "#718096" if not sin_stock else "#CBD5E0"
     return (
         f'<span style="display:inline-flex;align-items:center;gap:8px;'
-        f'background:{bg};border-radius:20px;padding:7px 16px;margin:4px;'
+        f'background:#F7FAFC;border-radius:20px;padding:7px 16px;margin:4px;'
         f'font-size:0.88rem;border:1px solid #E2E8F0;{opacity}">'
-        f'<span style="width:13px;height:13px;border-radius:50%;background:{dot};'
+        f'<span style="width:14px;height:14px;border-radius:50%;{dot_bg};'
         f'display:inline-block;border:{border};flex-shrink:0"></span>'
         f'<strong style="color:#2D3748">{color}</strong>'
         f'<span style="color:{cant_color};font-weight:600">{cant_label}</span>'
