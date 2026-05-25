@@ -98,10 +98,38 @@ def load_stock():
         return json.load(f)
 
 
+def _commit_to_github(path, content_str):
+    """Guarda un archivo en el repo de GitHub para que persista entre redeploys."""
+    import requests, base64
+    try:
+        token = st.secrets.get("GITHUB_TOKEN", "")
+        repo  = st.secrets.get("GITHUB_REPO", "AndyRojas17/ssenda-stock")
+        if not token:
+            return
+        headers = {
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+        url = f"https://api.github.com/repos/{repo}/contents/{path}"
+        r = requests.get(url, headers=headers, timeout=10)
+        sha = r.json().get("sha") if r.status_code == 200 else None
+        payload = {
+            "message": f"Auto: actualizar {path}",
+            "content": base64.b64encode(content_str.encode()).decode(),
+        }
+        if sha:
+            payload["sha"] = sha
+        requests.put(url, headers=headers, json=payload, timeout=10)
+    except Exception:
+        pass  # Si falla GitHub, el archivo local ya fue guardado
+
+
 def save_stock(records, filename, count):
     os.makedirs(DATA_DIR, exist_ok=True)
+    stock_str = json.dumps(records, ensure_ascii=False, indent=2)
     with open(STOCK_FILE, "w", encoding="utf-8") as f:
-        json.dump(records, f, ensure_ascii=False, indent=2)
+        f.write(stock_str)
+
     from datetime import datetime, timezone, timedelta
     peru = timezone(timedelta(hours=-5))
     meta = {
@@ -109,8 +137,13 @@ def save_stock(records, filename, count):
         "filename": filename,
         "modelos": count,
     }
+    meta_str = json.dumps(meta, ensure_ascii=False)
     with open(META_FILE, "w", encoding="utf-8") as f:
-        json.dump(meta, f, ensure_ascii=False)
+        f.write(meta_str)
+
+    # Persistir en GitHub para sobrevivir redeploys
+    _commit_to_github("data/stock.json", stock_str)
+    _commit_to_github("data/meta.json", meta_str)
 
 
 def load_meta():
