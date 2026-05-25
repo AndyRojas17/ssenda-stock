@@ -100,9 +100,10 @@ def save_stock(records, filename, count):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(STOCK_FILE, "w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
-    from datetime import datetime
+    from datetime import datetime, timezone, timedelta
+    peru = timezone(timedelta(hours=-5))
     meta = {
-        "last_upload": datetime.now().strftime("%d/%m/%Y %H:%M"),
+        "last_upload": datetime.now(peru).strftime("%d/%m/%Y %H:%M"),
         "filename": filename,
         "modelos": count,
     }
