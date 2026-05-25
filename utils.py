@@ -162,15 +162,22 @@ def color_badge(color, cantidad):
 
 
 def render_header(subtitle=""):
+    import base64
     st.markdown(STYLES, unsafe_allow_html=True)
+    logo_path = os.path.join(os.path.dirname(__file__), "assets", "logo.png")
+    logo_html = ""
+    if os.path.exists(logo_path):
+        with open(logo_path, "rb") as f:
+            b64 = base64.b64encode(f.read()).decode()
+        logo_html = f'<img src="data:image/png;base64,{b64}" style="height:48px;width:auto">'
+    else:
+        logo_html = '<span style="font-size:1.7rem;font-weight:900;color:#F5C200;font-style:italic">S·SENDA</span>'
+
     st.markdown(f"""
-    <div style="background:#1A1A1A;border-radius:10px;padding:18px 24px;
-                display:flex;align-items:center;gap:16px;margin-bottom:24px">
-        <div style="font-size:1.7rem;font-weight:900;color:#F5C200;
-                    letter-spacing:-1px;line-height:1;font-style:italic">
-            S·SENDA
-        </div>
-        <div style="width:1px;height:32px;background:#444"></div>
+    <div style="background:#1A1A1A;border-radius:10px;padding:16px 24px;
+                display:flex;align-items:center;gap:20px;margin-bottom:24px">
+        {logo_html}
+        <div style="width:1px;height:36px;background:#3A3A3A"></div>
         <div style="font-size:0.88rem;color:#CCCCCC;font-weight:500">
             {subtitle if subtitle else 'Panel interno de ventas'}
         </div>
