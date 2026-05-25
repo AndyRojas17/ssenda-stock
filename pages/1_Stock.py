@@ -42,7 +42,7 @@ with st.form("buscar_form"):
             label_visibility="collapsed",
         )
     with col_btn:
-        buscar = st.form_submit_button("🔍  Buscar", use_container_width=True)
+        buscar = st.form_submit_button("Buscar", use_container_width=True)
 
 st.markdown('<div style="margin-bottom:20px"></div>', unsafe_allow_html=True)
 

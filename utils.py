@@ -22,14 +22,16 @@ STYLES = """
                 letter-spacing: 0.8px; margin-top: 6px; }
 
 /* ── Botones ── */
-.stButton > button {
+.stButton > button,
+.stFormSubmitButton > button {
     background: #F5C200 !important;
     color: #1A1A1A !important; border: none !important; border-radius: 8px !important;
     font-size: 1rem !important; font-weight: 800 !important;
     padding: 14px 40px !important; width: 100% !important;
     letter-spacing: 0.5px !important; transition: all 0.2s !important;
 }
-.stButton > button:hover {
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
     background: #E0AE00 !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 20px rgba(245,194,0,0.5) !important;
