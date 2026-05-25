@@ -20,8 +20,8 @@ def _svg_b64(filename):
 
 icon_stock = _svg_b64("icon_stock.svg")
 icon_carga = _svg_b64("icon_carga.svg")
-img_stock = f'<img src="data:image/svg+xml;base64,{icon_stock}" style="height:52px;width:auto">' if icon_stock else "🔍"
-img_carga = f'<img src="data:image/svg+xml;base64,{icon_carga}" style="height:52px;width:auto">' if icon_carga else "📂"
+img_stock = f'<img src="data:image/svg+xml;base64,{icon_stock}" style="height:26px;width:auto">' if icon_stock else "🔍"
+img_carga = f'<img src="data:image/svg+xml;base64,{icon_carga}" style="height:26px;width:auto">' if icon_carga else "📂"
 
 st.markdown("## Bienvenido al panel de Ssenda")
 st.markdown('<p style="color:#666;margin-top:-12px">Selecciona una herramienta para comenzar</p>',
