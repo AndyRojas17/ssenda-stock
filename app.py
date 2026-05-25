@@ -39,33 +39,33 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 st.markdown(f"""
 <style>
-.s-card {
+.s-card {{
     display: block; text-decoration: none;
     background: #1A1A1A; border-radius: 12px;
     padding: 28px 24px; min-height: 170px;
     transition: all 0.18s ease; cursor: pointer;
     border: 2px solid #2A2A2A;
-}
-.s-card:hover {
+}}
+.s-card:hover {{
     background: #222222; box-shadow: 0 8px 28px rgba(0,0,0,0.25);
     transform: translateY(-3px); border-color: #F5C200;
     text-decoration: none;
-}
+}}
 .s-card, .s-card:link, .s-card:visited, .s-card:hover, .s-card:active,
-.s-card *, .s-card *:link, .s-card *:visited, .s-card *:hover {
+.s-card *, .s-card *:link, .s-card *:visited, .s-card *:hover {{
     text-decoration: none !important;
-}
-.s-card-icon  { font-size: 2.2rem; margin-bottom: 12px; }
-.s-card-title { font-size: 1.2rem; font-weight: 800; color: #FFFFFF; }
-.s-card-desc  { color: #AAAAAA; font-size: 0.88rem; margin-top: 8px; line-height: 1.6; }
-.s-card-arrow {
+}}
+.s-card-icon  {{ font-size: 2.2rem; margin-bottom: 12px; }}
+.s-card-title {{ font-size: 1.2rem; font-weight: 800; color: #FFFFFF; }}
+.s-card-desc  {{ color: #AAAAAA; font-size: 0.88rem; margin-top: 8px; line-height: 1.6; }}
+.s-card-arrow {{
     display: inline-block; margin-top: 18px; font-size: 0.88rem;
     font-weight: 800; color: #F5C200; letter-spacing: 0.3px;
-}
-.s-cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 720px; }
-@media (max-width: 640px) {
-    .s-cards-grid { grid-template-columns: 1fr; gap: 14px; }
-}
+}}
+.s-cards-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 720px; }}
+@media (max-width: 640px) {{
+    .s-cards-grid {{ grid-template-columns: 1fr; gap: 14px; }}
+}}
 </style>
 
 <div class="s-cards-grid">
