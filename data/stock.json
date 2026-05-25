@@ -4,20 +4,20 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 21,
-        "ate": 0,
+        "cantidad": 22,
+        "ate": 1,
         "cjm": 21
       },
       {
         "color": "NEG-VERD",
-        "cantidad": 16,
-        "ate": 0,
+        "cantidad": 17,
+        "ate": 1,
         "cjm": 16
       },
       {
         "color": "ROJO",
-        "cantidad": 41,
-        "ate": 0,
+        "cantidad": 42,
+        "ate": 1,
         "cjm": 41
       }
     ]
@@ -27,14 +27,14 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": -9,
-        "ate": 0,
+        "cantidad": -8,
+        "ate": 1,
         "cjm": -9
       },
       {
         "color": "ROJO",
-        "cantidad": 1,
-        "ate": 0,
+        "cantidad": 4,
+        "ate": 3,
         "cjm": 1
       }
     ]
@@ -44,8 +44,8 @@
     "colores": [
       {
         "color": "NEGR-AZU",
-        "cantidad": 68,
-        "ate": 0,
+        "cantidad": 70,
+        "ate": 2,
         "cjm": 68
       },
       {
@@ -60,22 +60,311 @@
     "modelo": "DURO 200 CB",
     "colores": [
       {
-        "color": "NEGR-AMA",
-        "cantidad": 4,
-        "ate": 0,
-        "cjm": 4
-      },
-      {
         "color": "NRG-ROJ",
-        "cantidad": 0,
-        "ate": 0,
+        "cantidad": 1,
+        "ate": 1,
         "cjm": 0
       },
       {
         "color": "ROJ-BLAN",
-        "cantidad": 10,
-        "ate": 0,
+        "cantidad": 11,
+        "ate": 1,
         "cjm": 10
+      },
+      {
+        "color": "NEGR-AMA",
+        "cantidad": 4,
+        "ate": 0,
+        "cjm": 4
+      }
+    ]
+  },
+  {
+    "modelo": "DURO 250 TNR",
+    "colores": [
+      {
+        "color": "BLANCO",
+        "cantidad": 38,
+        "ate": 3,
+        "cjm": 35
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": -5,
+        "ate": 0,
+        "cjm": -5
+      }
+    ]
+  },
+  {
+    "modelo": "ECO FINITI 150",
+    "colores": [
+      {
+        "color": "ROJO",
+        "cantidad": 2,
+        "ate": 1,
+        "cjm": 1
+      }
+    ]
+  },
+  {
+    "modelo": "FINITI 150 SPORT",
+    "colores": [
+      {
+        "color": "NEG-AZUL",
+        "cantidad": 46,
+        "ate": 0,
+        "cjm": 46
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": 52,
+        "ate": 1,
+        "cjm": 51
+      }
+    ]
+  },
+  {
+    "modelo": "JIMMY 150",
+    "colores": [
+      {
+        "color": "AZUL MET",
+        "cantidad": 12,
+        "ate": 12,
+        "cjm": 0
+      },
+      {
+        "color": "ROSA SAK",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "LEO 110-N PLUS",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 48,
+        "ate": 1,
+        "cjm": 47
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 47,
+        "ate": 2,
+        "cjm": 45
+      }
+    ]
+  },
+  {
+    "modelo": "MATRIX VIII 150",
+    "colores": [
+      {
+        "color": "BLANCO",
+        "cantidad": 2,
+        "ate": 2,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "MONSTER 250R",
+    "colores": [
+      {
+        "color": "NGR-GR",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      },
+      {
+        "color": "NGR-RJ",
+        "cantidad": 21,
+        "ate": 1,
+        "cjm": 20
+      },
+      {
+        "color": "NGR-VRD",
+        "cantidad": 56,
+        "ate": 1,
+        "cjm": 55
+      }
+    ]
+  },
+  {
+    "modelo": "PATAGONIA 250V8",
+    "colores": [
+      {
+        "color": "GRIS",
+        "cantidad": 8,
+        "ate": 4,
+        "cjm": 4
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 11,
+        "ate": 0,
+        "cjm": 11
+      }
+    ]
+  },
+  {
+    "modelo": "P-TERRA 200",
+    "colores": [
+      {
+        "color": "GRI-ANRJ",
+        "cantidad": 45,
+        "ate": 2,
+        "cjm": 43
+      },
+      {
+        "color": "NG-BL-AN",
+        "cantidad": 33,
+        "ate": 1,
+        "cjm": 32
+      },
+      {
+        "color": "NGR-RJ",
+        "cantidad": 72,
+        "ate": 2,
+        "cjm": 70
+      }
+    ]
+  },
+  {
+    "modelo": "RVS 175 EFI",
+    "colores": [
+      {
+        "color": "AZUL",
+        "cantidad": 2,
+        "ate": 2,
+        "cjm": 0
+      },
+      {
+        "color": "GRIS",
+        "cantidad": 3,
+        "ate": 3,
+        "cjm": 0
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 4,
+        "ate": 4,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "SANTANA 250",
+    "colores": [
+      {
+        "color": "ROJO",
+        "cantidad": 2,
+        "ate": 2,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "SS200-X7",
+    "colores": [
+      {
+        "color": "NEG-ROJ",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "SS250-ATV",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 48,
+        "ate": 1,
+        "cjm": 47
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 44,
+        "ate": 0,
+        "cjm": 44
+      }
+    ]
+  },
+  {
+    "modelo": "SS300-X7 EFI",
+    "colores": [
+      {
+        "color": "NEG-ANAR",
+        "cantidad": 2,
+        "ate": 4,
+        "cjm": -2
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      },
+      {
+        "color": "NEGR-VER",
+        "cantidad": 15,
+        "ate": 1,
+        "cjm": 14
+      },
+      {
+        "color": "NEGR-ANA",
+        "cantidad": 30,
+        "ate": 0,
+        "cjm": 30
+      }
+    ]
+  },
+  {
+    "modelo": "TY150T-H",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "URBANKAR 150",
+    "colores": [
+      {
+        "color": "AZUL",
+        "cantidad": 3,
+        "ate": 3,
+        "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "VIPER 200 NKS",
+    "colores": [
+      {
+        "color": "BLC-ANAR",
+        "cantidad": 3,
+        "ate": 3,
+        "cjm": 0
+      },
+      {
+        "color": "NEGR-ANA",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 3,
+        "ate": 3,
+        "cjm": 0
       }
     ]
   },
@@ -103,68 +392,6 @@
     ]
   },
   {
-    "modelo": "DURO 250 TNR",
-    "colores": [
-      {
-        "color": "BLANCO",
-        "cantidad": 35,
-        "ate": 0,
-        "cjm": 35
-      },
-      {
-        "color": "NEGRO",
-        "cantidad": -5,
-        "ate": 0,
-        "cjm": -5
-      }
-    ]
-  },
-  {
-    "modelo": "ECO FINITI 150",
-    "colores": [
-      {
-        "color": "ROJO",
-        "cantidad": 1,
-        "ate": 0,
-        "cjm": 1
-      }
-    ]
-  },
-  {
-    "modelo": "FINITI 150 SPORT",
-    "colores": [
-      {
-        "color": "NEG-AZUL",
-        "cantidad": 46,
-        "ate": 0,
-        "cjm": 46
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": 51,
-        "ate": 0,
-        "cjm": 51
-      }
-    ]
-  },
-  {
-    "modelo": "LEO 110-N PLUS",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 47,
-        "ate": 0,
-        "cjm": 47
-      },
-      {
-        "color": "ROJO",
-        "cantidad": 45,
-        "ate": 0,
-        "cjm": 45
-      }
-    ]
-  },
-  {
     "modelo": "LEO 125-N RALLY",
     "colores": [
       {
@@ -184,63 +411,6 @@
         "cantidad": -6,
         "ate": 0,
         "cjm": -6
-      }
-    ]
-  },
-  {
-    "modelo": "MONSTER 250R",
-    "colores": [
-      {
-        "color": "NGR-RJ",
-        "cantidad": 20,
-        "ate": 0,
-        "cjm": 20
-      },
-      {
-        "color": "NGR-VRD",
-        "cantidad": 55,
-        "ate": 0,
-        "cjm": 55
-      }
-    ]
-  },
-  {
-    "modelo": "PATAGONIA 250V8",
-    "colores": [
-      {
-        "color": "GRIS",
-        "cantidad": 4,
-        "ate": 0,
-        "cjm": 4
-      },
-      {
-        "color": "NEGRO",
-        "cantidad": 11,
-        "ate": 0,
-        "cjm": 11
-      }
-    ]
-  },
-  {
-    "modelo": "P-TERRA 200",
-    "colores": [
-      {
-        "color": "GRI-ANRJ",
-        "cantidad": 43,
-        "ate": 0,
-        "cjm": 43
-      },
-      {
-        "color": "NG-BL-AN",
-        "cantidad": 32,
-        "ate": 0,
-        "cjm": 32
-      },
-      {
-        "color": "NGR-RJ",
-        "cantidad": 70,
-        "ate": 0,
-        "cjm": 70
       }
     ]
   },
@@ -273,23 +443,6 @@
     ]
   },
   {
-    "modelo": "SS250-ATV",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 47,
-        "ate": 0,
-        "cjm": 47
-      },
-      {
-        "color": "ROJO",
-        "cantidad": 44,
-        "ate": 0,
-        "cjm": 44
-      }
-    ]
-  },
-  {
     "modelo": "SS250ZH-AGUA",
     "colores": [
       {
@@ -297,35 +450,6 @@
         "cantidad": 12,
         "ate": 0,
         "cjm": 12
-      }
-    ]
-  },
-  {
-    "modelo": "SS300-X7 EFI",
-    "colores": [
-      {
-        "color": "NEG-ANAR",
-        "cantidad": -2,
-        "ate": 0,
-        "cjm": -2
-      },
-      {
-        "color": "NEGR-ANA",
-        "cantidad": 30,
-        "ate": 0,
-        "cjm": 30
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": 0,
-        "ate": 0,
-        "cjm": 0
-      },
-      {
-        "color": "NEGR-VER",
-        "cantidad": 14,
-        "ate": 0,
-        "cjm": 14
       }
     ]
   },
