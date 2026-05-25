@@ -47,22 +47,33 @@ STYLES = """
 """
 
 COLOR_MAP = {
-    "rojo": "#E53E3E", "red": "#E53E3E",
-    "negro": "#2D3748", "black": "#2D3748",
-    "blanco": "#EDF2F7", "white": "#EDF2F7",
-    "azul": "#3182CE", "blue": "#3182CE",
+    # Negros
+    "negro": "#2D3748", "negr": "#2D3748", "neg": "#2D3748", "black": "#2D3748",
+    # Rojos
+    "rojo": "#E53E3E", "roj": "#E53E3E", "red": "#E53E3E",
+    # Blancos
+    "blanco": "#EDF2F7", "blan": "#EDF2F7", "bla": "#EDF2F7", "white": "#EDF2F7",
+    # Azules
+    "azul": "#3182CE", "azu": "#3182CE", "blue": "#3182CE", "azul met": "#2B6CB0",
     "celeste": "#63B3ED",
-    "verde": "#38A169", "green": "#38A169",
-    "amarillo": "#D69E2E", "yellow": "#D69E2E",
-    "naranja": "#DD6B20", "orange": "#DD6B20",
+    # Verdes
+    "verde": "#38A169", "verd": "#38A169", "green": "#38A169",
+    # Amarillos
+    "amarillo": "#D69E2E", "ama": "#D69E2E", "yellow": "#D69E2E",
+    # Naranja
+    "naranja": "#DD6B20", "nar": "#DD6B20", "orange": "#DD6B20",
+    # Grises
+    "gris": "#718096", "gri": "#718096", "gray": "#718096", "grey": "#718096",
     "plateado": "#A0AEC0", "silver": "#A0AEC0",
-    "gris": "#718096", "gray": "#718096", "grey": "#718096",
+    # Rosas
+    "rosa": "#D53F8C", "ros": "#D53F8C", "rosa sak": "#ED64A6", "pink": "#D53F8C",
+    # Morados
     "morado": "#805AD5", "purple": "#805AD5",
+    # Dorados / Marrones
     "dorado": "#B7791F", "gold": "#B7791F",
-    "rosa": "#D53F8C", "pink": "#D53F8C",
     "marron": "#744210", "cafe": "#744210", "brown": "#744210",
     "vinotinto": "#822727",
-    "beige": "#C8A97E", "crema": "#FFFACD",
+    "beige": "#C8A97E", "crema": "#FEFCBF",
 }
 
 DATA_DIR   = os.path.join(os.path.dirname(__file__), "data")
@@ -98,21 +109,46 @@ def load_meta():
         return json.load(f)
 
 
-def color_badge(color, cantidad):
-    key = color.lower().strip()
+def _resolver_color(nombre):
+    """Devuelve el color CSS para un nombre de color (simple o combinado como NEGR-AZU)."""
     import unicodedata
-    key = "".join(c for c in unicodedata.normalize("NFD", key)
-                  if unicodedata.category(c) != "Mn")
-    dot = COLOR_MAP.get(key, "#CBD5E0")
-    border = "1px solid rgba(0,0,0,0.15)" if key not in ("blanco", "white", "crema", "beige") else "1px solid #CBD5E0"
+    def normalizar(t):
+        t = t.lower().strip()
+        return "".join(c for c in unicodedata.normalize("NFD", t)
+                       if unicodedata.category(c) != "Mn")
+
+    key = normalizar(nombre)
+    if key in COLOR_MAP:
+        return COLOR_MAP[key]
+    # Buscar por prefijo (ej: "negr-azu" → buscar "negr")
+    partes = key.replace("-", " ").split()
+    for parte in partes:
+        if parte in COLOR_MAP:
+            return COLOR_MAP[parte]
+        # Buscar por inicio de clave
+        for map_key, map_val in COLOR_MAP.items():
+            if map_key.startswith(parte) or parte.startswith(map_key):
+                return map_val
+    return "#CBD5E0"
+
+
+def color_badge(color, cantidad):
+    dot = _resolver_color(color)
+    es_claro = dot in ("#EDF2F7", "#FEFCBF", "#CBD5E0")
+    border = "1px solid #CBD5E0" if es_claro else "1px solid rgba(0,0,0,0.15)"
+    sin_stock = cantidad == 0
+    bg = "#F7FAFC" if not sin_stock else "#F7FAFC"
+    opacity = "opacity:0.45;" if sin_stock else ""
+    cant_label = str(cantidad) if not sin_stock else "Sin stock"
+    cant_color = "#718096" if not sin_stock else "#CBD5E0"
     return (
         f'<span style="display:inline-flex;align-items:center;gap:8px;'
-        f'background:#F7FAFC;border-radius:20px;padding:7px 16px;margin:4px;'
-        f'font-size:0.88rem;border:1px solid #E2E8F0">'
+        f'background:{bg};border-radius:20px;padding:7px 16px;margin:4px;'
+        f'font-size:0.88rem;border:1px solid #E2E8F0;{opacity}">'
         f'<span style="width:13px;height:13px;border-radius:50%;background:{dot};'
         f'display:inline-block;border:{border};flex-shrink:0"></span>'
         f'<strong style="color:#2D3748">{color}</strong>'
-        f'<span style="color:#718096;font-weight:600">{cantidad}</span>'
+        f'<span style="color:{cant_color};font-weight:600">{cant_label}</span>'
         f"</span>"
     )
 

@@ -102,25 +102,57 @@ if cargar and archivo:
         try:
             df = pd.read_excel(archivo)
             df.columns = df.columns.astype(str).str.strip()
+            cols_up = [c.upper() for c in df.columns]
 
-            modelo_col  = df.columns[0]
-            color_cols  = df.columns[1:].tolist()
+            # Detectar formato: fila-por-color (tiene columna COLOR) o columnas-por-color
+            tiene_color_col = any("COLOR" in c for c in cols_up)
 
-            records = []
-            for _, row in df.iterrows():
-                modelo = str(row[modelo_col]).strip()
-                if not modelo or modelo.lower() in ("nan", "none", ""):
-                    continue
-                colores = []
-                for col in color_cols:
+            if tiene_color_col:
+                # Formato: MODELO | ALMACEN(opcional) | COLOR | S.DISPONIBLES
+                modelo_col = next((df.columns[i] for i, c in enumerate(cols_up) if "MODELO" in c), df.columns[0])
+                color_col  = next((df.columns[i] for i, c in enumerate(cols_up) if "COLOR" in c), None)
+                qty_col    = next(
+                    (df.columns[i] for i, c in enumerate(cols_up)
+                     if any(k in c for k in ["DISPONIBLE", "CANTIDAD", "STOCK", "QTY"])),
+                    df.columns[-1]
+                )
+
+                agrupado = {}
+                for _, row in df.iterrows():
+                    modelo = str(row[modelo_col]).strip()
+                    if not modelo or modelo.lower() in ("nan", "none", ""):
+                        continue
+                    color = str(row[color_col]).strip() if color_col else "—"
                     try:
-                        cant = int(float(str(row[col])))
+                        cant = int(float(str(row[qty_col])))
                     except (ValueError, TypeError):
                         cant = 0
-                    if cant > 0:
-                        colores.append({"color": col, "cantidad": cant})
-                if colores:
-                    records.append({"modelo": modelo, "colores": colores})
+                    if modelo not in agrupado:
+                        agrupado[modelo] = []
+                    agrupado[modelo].append({"color": color, "cantidad": cant})
+
+                records = [{"modelo": m, "colores": c} for m, c in agrupado.items()
+                           if any(x["cantidad"] > 0 for x in c)]
+
+            else:
+                # Formato: MODELO | Color1 | Color2 | Color3 ...
+                modelo_col = df.columns[0]
+                color_cols = df.columns[1:].tolist()
+                records = []
+                for _, row in df.iterrows():
+                    modelo = str(row[modelo_col]).strip()
+                    if not modelo or modelo.lower() in ("nan", "none", ""):
+                        continue
+                    colores = []
+                    for col in color_cols:
+                        try:
+                            cant = int(float(str(row[col])))
+                        except (ValueError, TypeError):
+                            cant = 0
+                        if cant > 0:
+                            colores.append({"color": col, "cantidad": cant})
+                    if colores:
+                        records.append({"modelo": modelo, "colores": colores})
 
             save_stock(records, archivo.name, len(records))
 
