@@ -73,10 +73,6 @@
     "modelo": "FINITI 150 SPORT",
     "colores": [
       {
-        "color": "NEG-AZUL",
-        "cantidad": 0
-      },
-      {
         "color": "NEGR-ROJ",
         "cantidad": 1
       }
@@ -88,10 +84,6 @@
       {
         "color": "AZUL MET",
         "cantidad": 12
-      },
-      {
-        "color": "ROSA SAK",
-        "cantidad": 1
       }
     ]
   },
