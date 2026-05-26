@@ -4,15 +4,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 22,
+        "cantidad": 27,
         "ate": 1,
-        "cjm": 21
+        "cjm": 26
       },
       {
         "color": "NEG-VERD",
-        "cantidad": 17,
+        "cantidad": 21,
         "ate": 1,
-        "cjm": 16
+        "cjm": 20
       },
       {
         "color": "ROJO",
@@ -27,15 +27,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": -8,
+        "cantidad": 1,
         "ate": 1,
-        "cjm": -9
+        "cjm": 0
       },
       {
         "color": "ROJO",
-        "cantidad": 4,
+        "cantidad": 8,
         "ate": 3,
-        "cjm": 1
+        "cjm": 5
       }
     ]
   },
@@ -44,15 +44,15 @@
     "colores": [
       {
         "color": "NEGR-AZU",
-        "cantidad": 70,
+        "cantidad": 71,
         "ate": 2,
-        "cjm": 68
+        "cjm": 69
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 27,
+        "cantidad": 28,
         "ate": 0,
-        "cjm": 27
+        "cjm": 28
       }
     ]
   },
@@ -84,15 +84,9 @@
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 38,
+        "cantidad": 39,
         "ate": 3,
-        "cjm": 35
-      },
-      {
-        "color": "NEGRO",
-        "cantidad": -5,
-        "ate": 0,
-        "cjm": -5
+        "cjm": 36
       }
     ]
   },
@@ -101,9 +95,9 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 2,
+        "cantidad": 1,
         "ate": 1,
-        "cjm": 1
+        "cjm": 0
       }
     ]
   },
@@ -140,15 +134,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 48,
+        "cantidad": 45,
         "ate": 1,
-        "cjm": 47
+        "cjm": 44
       },
       {
         "color": "ROJO",
-        "cantidad": 47,
+        "cantidad": 44,
         "ate": 2,
-        "cjm": 45
+        "cjm": 42
       }
     ]
   },
@@ -293,9 +287,9 @@
     "colores": [
       {
         "color": "NEG-ANAR",
-        "cantidad": 2,
+        "cantidad": 4,
         "ate": 4,
-        "cjm": -2
+        "cjm": 0
       },
       {
         "color": "NEGR-ROJ",
@@ -393,18 +387,6 @@
         "cantidad": 23,
         "ate": 0,
         "cjm": 23
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": -4,
-        "ate": 0,
-        "cjm": -4
-      },
-      {
-        "color": "ROJ-NEGR",
-        "cantidad": -6,
-        "ate": 0,
-        "cjm": -6
       }
     ]
   },
@@ -413,9 +395,9 @@
     "colores": [
       {
         "color": "RJ-NG-BR",
-        "cantidad": 16,
+        "cantidad": 13,
         "ate": 0,
-        "cjm": 16
+        "cjm": 13
       }
     ]
   },
@@ -423,16 +405,16 @@
     "modelo": "SS200ZH-AIRE",
     "colores": [
       {
-        "color": "AZUL",
-        "cantidad": 21,
-        "ate": 0,
-        "cjm": 21
-      },
-      {
         "color": "ROJO",
         "cantidad": 16,
         "ate": 0,
         "cjm": 16
+      },
+      {
+        "color": "AZUL",
+        "cantidad": 21,
+        "ate": 0,
+        "cjm": 21
       }
     ]
   },
@@ -440,10 +422,16 @@
     "modelo": "SS250ZH-AGUA",
     "colores": [
       {
-        "color": "ROJO",
-        "cantidad": 12,
+        "color": "",
+        "cantidad": 1,
         "ate": 0,
-        "cjm": 12
+        "cjm": 1
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 10,
+        "ate": 0,
+        "cjm": 10
       }
     ]
   },
@@ -469,15 +457,15 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 23,
+        "cantidad": 22,
         "ate": 0,
-        "cjm": 23
+        "cjm": 22
       },
       {
         "color": "ROJO",
-        "cantidad": 21,
+        "cantidad": 22,
         "ate": 0,
-        "cjm": 21
+        "cjm": 22
       }
     ]
   },
@@ -491,16 +479,16 @@
         "cjm": 20
       },
       {
-        "color": "NEGRO",
-        "cantidad": 8,
-        "ate": 0,
-        "cjm": 8
-      },
-      {
         "color": "ROJO",
         "cantidad": 20,
         "ate": 0,
         "cjm": 20
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 8,
+        "ate": 0,
+        "cjm": 8
       }
     ]
   }
