@@ -111,16 +111,16 @@
     "modelo": "FINITI 150 SPORT",
     "colores": [
       {
-        "color": "NEG-AZUL",
-        "cantidad": 46,
-        "ate": 0,
-        "cjm": 46
-      },
-      {
         "color": "NEGR-ROJ",
         "cantidad": 52,
         "ate": 1,
         "cjm": 51
+      },
+      {
+        "color": "NEG-AZUL",
+        "cantidad": 46,
+        "ate": 0,
+        "cjm": 46
       }
     ]
   },
@@ -131,12 +131,6 @@
         "color": "AZUL MET",
         "cantidad": 12,
         "ate": 12,
-        "cjm": 0
-      },
-      {
-        "color": "ROSA SAK",
-        "cantidad": 1,
-        "ate": 1,
         "cjm": 0
       }
     ]
