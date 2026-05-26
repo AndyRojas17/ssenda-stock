@@ -3,12 +3,12 @@
     "modelo": "200X7SR",
     "colores": [
       {
-        "color": "NEGRO",
-        "cantidad": 21
+        "color": "NEG-VERD",
+        "cantidad": 20
       },
       {
-        "color": "NEG-VERD",
-        "cantidad": 16
+        "color": "NEGRO",
+        "cantidad": 26
       },
       {
         "color": "ROJO",
@@ -20,12 +20,8 @@
     "modelo": "CHACARERA 200",
     "colores": [
       {
-        "color": "NEGRO",
-        "cantidad": -9
-      },
-      {
         "color": "ROJO",
-        "cantidad": 1
+        "cantidad": 5
       }
     ]
   },
@@ -33,12 +29,12 @@
     "modelo": "DURO 150",
     "colores": [
       {
-        "color": "NEGR-AZU",
-        "cantidad": 68
+        "color": "NEGR-ROJ",
+        "cantidad": 28
       },
       {
-        "color": "NEGR-ROJ",
-        "cantidad": 27
+        "color": "NEGR-AZU",
+        "cantidad": 69
       }
     ]
   },
@@ -46,16 +42,12 @@
     "modelo": "DURO 200 CB",
     "colores": [
       {
-        "color": "NEGR-AMA",
-        "cantidad": 4
-      },
-      {
-        "color": "NRG-ROJ",
-        "cantidad": 0
-      },
-      {
         "color": "ROJ-BLAN",
         "cantidad": 10
+      },
+      {
+        "color": "NEGR-AMA",
+        "cantidad": 4
       }
     ]
   },
@@ -81,20 +73,7 @@
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 35
-      },
-      {
-        "color": "NEGRO",
-        "cantidad": -5
-      }
-    ]
-  },
-  {
-    "modelo": "ECO FINITI 150",
-    "colores": [
-      {
-        "color": "ROJO",
-        "cantidad": 1
+        "cantidad": 36
       }
     ]
   },
@@ -115,12 +94,12 @@
     "modelo": "LEO 110-N PLUS",
     "colores": [
       {
-        "color": "NEGRO",
-        "cantidad": 47
+        "color": "ROJO",
+        "cantidad": 42
       },
       {
-        "color": "ROJO",
-        "cantidad": 45
+        "color": "NEGRO",
+        "cantidad": 44
       }
     ]
   },
@@ -130,14 +109,6 @@
       {
         "color": "NEGRO-GR",
         "cantidad": 23
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": -4
-      },
-      {
-        "color": "ROJ-NEGR",
-        "cantidad": -6
       }
     ]
   },
@@ -158,12 +129,12 @@
     "modelo": "PATAGONIA 250V8",
     "colores": [
       {
-        "color": "GRIS",
-        "cantidad": 4
-      },
-      {
         "color": "NEGRO",
         "cantidad": 11
+      },
+      {
+        "color": "GRIS",
+        "cantidad": 4
       }
     ]
   },
@@ -171,12 +142,12 @@
     "modelo": "P-TERRA 200",
     "colores": [
       {
-        "color": "GRI-ANRJ",
-        "cantidad": 43
-      },
-      {
         "color": "NG-BL-AN",
         "cantidad": 32
+      },
+      {
+        "color": "GRI-ANRJ",
+        "cantidad": 43
       },
       {
         "color": "NGR-RJ",
@@ -189,7 +160,7 @@
     "colores": [
       {
         "color": "RJ-NG-BR",
-        "cantidad": 16
+        "cantidad": 13
       }
     ]
   },
@@ -197,12 +168,12 @@
     "modelo": "SS200ZH-AIRE",
     "colores": [
       {
-        "color": "AZUL",
-        "cantidad": 21
-      },
-      {
         "color": "ROJO",
         "cantidad": 16
+      },
+      {
+        "color": "AZUL",
+        "cantidad": 21
       }
     ]
   },
@@ -210,12 +181,12 @@
     "modelo": "SS250-ATV",
     "colores": [
       {
-        "color": "NEGRO",
-        "cantidad": 47
-      },
-      {
         "color": "ROJO",
         "cantidad": 44
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 47
       }
     ]
   },
@@ -223,8 +194,12 @@
     "modelo": "SS250ZH-AGUA",
     "colores": [
       {
+        "color": "",
+        "cantidad": 1
+      },
+      {
         "color": "ROJO",
-        "cantidad": 12
+        "cantidad": 10
       }
     ]
   },
@@ -232,20 +207,12 @@
     "modelo": "SS300-X7 EFI",
     "colores": [
       {
-        "color": "NEG-ANAR",
-        "cantidad": -2
+        "color": "NEGR-VER",
+        "cantidad": 14
       },
       {
         "color": "NEGR-ANA",
         "cantidad": 30
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": 0
-      },
-      {
-        "color": "NEGR-VER",
-        "cantidad": 14
       }
     ]
   },
@@ -267,11 +234,11 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 23
+        "cantidad": 22
       },
       {
         "color": "ROJO",
-        "cantidad": 21
+        "cantidad": 22
       }
     ]
   },
@@ -283,12 +250,12 @@
         "cantidad": 20
       },
       {
-        "color": "NEGRO",
-        "cantidad": 8
-      },
-      {
         "color": "ROJO",
         "cantidad": 20
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 8
       }
     ]
   }
