@@ -95,8 +95,8 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 1,
-        "ate": 1,
+        "cantidad": 2,
+        "ate": 2,
         "cjm": 0
       }
     ]
@@ -105,16 +105,16 @@
     "modelo": "FINITI 150 SPORT",
     "colores": [
       {
+        "color": "NEG-AZUL",
+        "cantidad": 48,
+        "ate": 2,
+        "cjm": 46
+      },
+      {
         "color": "NEGR-ROJ",
         "cantidad": 52,
         "ate": 1,
         "cjm": 51
-      },
-      {
-        "color": "NEG-AZUL",
-        "cantidad": 46,
-        "ate": 0,
-        "cjm": 46
       }
     ]
   },
@@ -123,8 +123,8 @@
     "colores": [
       {
         "color": "AZUL MET",
-        "cantidad": 12,
-        "ate": 12,
+        "cantidad": 10,
+        "ate": 10,
         "cjm": 0
       }
     ]
@@ -147,12 +147,29 @@
     ]
   },
   {
+    "modelo": "LEO 125-N RALLY",
+    "colores": [
+      {
+        "color": "ROJ-NEGR",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      },
+      {
+        "color": "NEGRO-GR",
+        "cantidad": 23,
+        "ate": 0,
+        "cjm": 23
+      }
+    ]
+  },
+  {
     "modelo": "MATRIX VIII 150",
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 2,
-        "ate": 2,
+        "cantidad": 3,
+        "ate": 3,
         "cjm": 0
       }
     ]
@@ -208,8 +225,8 @@
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 33,
-        "ate": 1,
+        "cantidad": 34,
+        "ate": 2,
         "cjm": 32
       },
       {
@@ -240,6 +257,17 @@
         "cantidad": 4,
         "ate": 4,
         "cjm": 0
+      }
+    ]
+  },
+  {
+    "modelo": "SANTANA 200",
+    "colores": [
+      {
+        "color": "RJ-NG-BR",
+        "cantidad": 14,
+        "ate": 1,
+        "cjm": 13
       }
     ]
   },
@@ -312,6 +340,23 @@
     ]
   },
   {
+    "modelo": "SWEET 125",
+    "colores": [
+      {
+        "color": "BLANCO",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 1,
+        "ate": 1,
+        "cjm": 0
+      }
+    ]
+  },
+  {
     "modelo": "TY150T-H",
     "colores": [
       {
@@ -376,28 +421,6 @@
         "cantidad": 28,
         "ate": 0,
         "cjm": 28
-      }
-    ]
-  },
-  {
-    "modelo": "LEO 125-N RALLY",
-    "colores": [
-      {
-        "color": "NEGRO-GR",
-        "cantidad": 23,
-        "ate": 0,
-        "cjm": 23
-      }
-    ]
-  },
-  {
-    "modelo": "SANTANA 200",
-    "colores": [
-      {
-        "color": "RJ-NG-BR",
-        "cantidad": 13,
-        "ate": 0,
-        "cjm": 13
       }
     ]
   },
