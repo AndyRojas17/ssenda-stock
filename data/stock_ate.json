@@ -65,13 +65,17 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 1
+        "cantidad": 2
       }
     ]
   },
   {
     "modelo": "FINITI 150 SPORT",
     "colores": [
+      {
+        "color": "NEG-AZUL",
+        "cantidad": 2
+      },
       {
         "color": "NEGR-ROJ",
         "cantidad": 1
@@ -83,7 +87,7 @@
     "colores": [
       {
         "color": "AZUL MET",
-        "cantidad": 12
+        "cantidad": 10
       }
     ]
   },
@@ -101,11 +105,20 @@
     ]
   },
   {
+    "modelo": "LEO 125-N RALLY",
+    "colores": [
+      {
+        "color": "ROJ-NEGR",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
     "modelo": "MATRIX VIII 150",
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 2
+        "cantidad": 3
       }
     ]
   },
@@ -144,7 +157,7 @@
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 1
+        "cantidad": 2
       },
       {
         "color": "NGR-RJ",
@@ -166,6 +179,15 @@
       {
         "color": "NEGRO",
         "cantidad": 4
+      }
+    ]
+  },
+  {
+    "modelo": "SANTANA 200",
+    "colores": [
+      {
+        "color": "RJ-NG-BR",
+        "cantidad": 1
       }
     ]
   },
@@ -209,6 +231,19 @@
       },
       {
         "color": "NEGR-VER",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "modelo": "SWEET 125",
+    "colores": [
+      {
+        "color": "BLANCO",
+        "cantidad": 1
+      },
+      {
+        "color": "NEGRO",
         "cantidad": 1
       }
     ]
