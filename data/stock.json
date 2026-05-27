@@ -4,9 +4,9 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 27,
+        "cantidad": 29,
         "ate": 1,
-        "cjm": 26
+        "cjm": 28
       },
       {
         "color": "NEG-VERD",
@@ -27,15 +27,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 1,
+        "cantidad": 3,
         "ate": 1,
-        "cjm": 0
+        "cjm": 2
       },
       {
         "color": "ROJO",
-        "cantidad": 8,
+        "cantidad": 15,
         "ate": 3,
-        "cjm": 5
+        "cjm": 12
       }
     ]
   },
@@ -44,15 +44,15 @@
     "colores": [
       {
         "color": "NEGR-AZU",
-        "cantidad": 71,
+        "cantidad": 77,
         "ate": 2,
-        "cjm": 69
+        "cjm": 75
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 28,
+        "cantidad": 37,
         "ate": 0,
-        "cjm": 28
+        "cjm": 37
       }
     ]
   },
@@ -61,9 +61,9 @@
     "colores": [
       {
         "color": "NRG-ROJ",
-        "cantidad": 1,
+        "cantidad": 7,
         "ate": 1,
-        "cjm": 0
+        "cjm": 6
       },
       {
         "color": "ROJ-BLAN",
@@ -73,9 +73,9 @@
       },
       {
         "color": "NEGR-AMA",
-        "cantidad": 4,
+        "cantidad": 7,
         "ate": 0,
-        "cjm": 4
+        "cjm": 7
       }
     ]
   },
@@ -84,9 +84,15 @@
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 39,
+        "cantidad": 50,
         "ate": 3,
-        "cjm": 36
+        "cjm": 47
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 7,
+        "ate": 0,
+        "cjm": 7
       }
     ]
   },
@@ -95,9 +101,9 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 2,
+        "cantidad": 19,
         "ate": 2,
-        "cjm": 0
+        "cjm": 17
       }
     ]
   },
@@ -106,15 +112,15 @@
     "colores": [
       {
         "color": "NEG-AZUL",
-        "cantidad": 48,
+        "cantidad": 55,
         "ate": 2,
-        "cjm": 46
+        "cjm": 53
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 52,
+        "cantidad": 58,
         "ate": 1,
-        "cjm": 51
+        "cjm": 57
       }
     ]
   },
@@ -134,15 +140,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 45,
+        "cantidad": 48,
         "ate": 1,
-        "cjm": 44
+        "cjm": 47
       },
       {
         "color": "ROJO",
-        "cantidad": 44,
+        "cantidad": 47,
         "ate": 2,
-        "cjm": 42
+        "cjm": 45
       }
     ]
   },
@@ -151,15 +157,21 @@
     "colores": [
       {
         "color": "ROJ-NEGR",
-        "cantidad": 1,
+        "cantidad": 5,
         "ate": 1,
-        "cjm": 0
+        "cjm": 4
       },
       {
         "color": "NEGRO-GR",
-        "cantidad": 23,
+        "cantidad": 34,
         "ate": 0,
-        "cjm": 23
+        "cjm": 34
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": 10,
+        "ate": 0,
+        "cjm": 10
       }
     ]
   },
@@ -202,15 +214,15 @@
     "colores": [
       {
         "color": "GRIS",
-        "cantidad": 8,
+        "cantidad": 15,
         "ate": 4,
-        "cjm": 4
+        "cjm": 11
       },
       {
         "color": "NEGRO",
-        "cantidad": 11,
+        "cantidad": 15,
         "ate": 0,
-        "cjm": 11
+        "cjm": 15
       }
     ]
   },
@@ -219,21 +231,21 @@
     "colores": [
       {
         "color": "GRI-ANRJ",
-        "cantidad": 45,
+        "cantidad": 47,
         "ate": 2,
-        "cjm": 43
+        "cjm": 45
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 34,
+        "cantidad": 37,
         "ate": 2,
-        "cjm": 32
+        "cjm": 35
       },
       {
         "color": "NGR-RJ",
-        "cantidad": 72,
+        "cantidad": 76,
         "ate": 2,
-        "cjm": 70
+        "cjm": 74
       }
     ]
   },
@@ -242,21 +254,21 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 2,
+        "cantidad": 8,
         "ate": 2,
-        "cjm": 0
+        "cjm": 6
       },
       {
         "color": "GRIS",
-        "cantidad": 3,
+        "cantidad": 9,
         "ate": 3,
-        "cjm": 0
+        "cjm": 6
       },
       {
         "color": "NEGRO",
-        "cantidad": 4,
+        "cantidad": 14,
         "ate": 4,
-        "cjm": 0
+        "cjm": 10
       }
     ]
   },
@@ -265,9 +277,9 @@
     "colores": [
       {
         "color": "RJ-NG-BR",
-        "cantidad": 14,
+        "cantidad": 15,
         "ate": 1,
-        "cjm": 13
+        "cjm": 14
       }
     ]
   },
@@ -279,6 +291,12 @@
         "cantidad": 2,
         "ate": 2,
         "cjm": 0
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 2,
+        "ate": 0,
+        "cjm": 2
       }
     ]
   },
@@ -287,9 +305,15 @@
     "colores": [
       {
         "color": "NEG-ROJ",
-        "cantidad": 1,
+        "cantidad": 4,
         "ate": 1,
-        "cjm": 0
+        "cjm": 3
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 1,
+        "ate": 0,
+        "cjm": 1
       }
     ]
   },
@@ -298,15 +322,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 48,
+        "cantidad": 51,
         "ate": 1,
-        "cjm": 47
+        "cjm": 50
       },
       {
         "color": "ROJO",
-        "cantidad": 44,
+        "cantidad": 46,
         "ate": 0,
-        "cjm": 44
+        "cjm": 46
       }
     ]
   },
@@ -315,27 +339,27 @@
     "colores": [
       {
         "color": "NEG-ANAR",
-        "cantidad": 4,
+        "cantidad": 6,
         "ate": 4,
-        "cjm": 0
+        "cjm": 2
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 1,
+        "cantidad": 3,
         "ate": 1,
-        "cjm": 0
+        "cjm": 2
       },
       {
         "color": "NEGR-VER",
-        "cantidad": 15,
+        "cantidad": 19,
         "ate": 1,
-        "cjm": 14
+        "cjm": 18
       },
       {
         "color": "NEGR-ANA",
-        "cantidad": 30,
+        "cantidad": 33,
         "ate": 0,
-        "cjm": 30
+        "cjm": 33
       }
     ]
   },
@@ -350,9 +374,9 @@
       },
       {
         "color": "NEGRO",
-        "cantidad": 1,
+        "cantidad": 2,
         "ate": 1,
-        "cjm": 0
+        "cjm": 1
       }
     ]
   },
@@ -383,21 +407,21 @@
     "colores": [
       {
         "color": "BLC-ANAR",
-        "cantidad": 3,
+        "cantidad": 7,
         "ate": 3,
-        "cjm": 0
+        "cjm": 4
       },
       {
         "color": "NEGR-ANA",
-        "cantidad": 1,
+        "cantidad": 7,
         "ate": 1,
-        "cjm": 0
+        "cjm": 6
       },
       {
         "color": "NEGRO",
-        "cantidad": 3,
+        "cantidad": 8,
         "ate": 3,
-        "cjm": 0
+        "cjm": 5
       }
     ]
   },
@@ -406,15 +430,15 @@
     "colores": [
       {
         "color": "NEGR-AMA",
-        "cantidad": 2,
+        "cantidad": 4,
         "ate": 0,
-        "cjm": 2
+        "cjm": 4
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 28,
+        "cantidad": 31,
         "ate": 0,
-        "cjm": 28
+        "cjm": 31
       },
       {
         "color": "ROJ-BLAN",
@@ -425,19 +449,52 @@
     ]
   },
   {
-    "modelo": "SS200ZH-AIRE",
+    "modelo": "GOL 125",
+    "colores": [
+      {
+        "color": "GRIS",
+        "cantidad": 1,
+        "ate": 0,
+        "cjm": 1
+      }
+    ]
+  },
+  {
+    "modelo": "PATAGONIA 169",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1,
+        "ate": 0,
+        "cjm": 1
+      }
+    ]
+  },
+  {
+    "modelo": "RVS 150",
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 16,
+        "cantidad": 1,
         "ate": 0,
-        "cjm": 16
-      },
+        "cjm": 1
+      }
+    ]
+  },
+  {
+    "modelo": "SS200ZH-AIRE",
+    "colores": [
       {
         "color": "AZUL",
         "cantidad": 21,
         "ate": 0,
         "cjm": 21
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 16,
+        "ate": 0,
+        "cjm": 16
       }
     ]
   },
@@ -449,6 +506,23 @@
         "cantidad": 1,
         "ate": 0,
         "cjm": 1
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 12,
+        "ate": 0,
+        "cjm": 12
+      }
+    ]
+  },
+  {
+    "modelo": "SS300-ATV",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 8,
+        "ate": 0,
+        "cjm": 8
       },
       {
         "color": "ROJO",
@@ -480,15 +554,15 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 22,
+        "cantidad": 23,
         "ate": 0,
-        "cjm": 22
+        "cjm": 23
       },
       {
         "color": "ROJO",
-        "cantidad": 22,
+        "cantidad": 23,
         "ate": 0,
-        "cjm": 22
+        "cjm": 23
       }
     ]
   },
@@ -502,16 +576,27 @@
         "cjm": 20
       },
       {
-        "color": "ROJO",
-        "cantidad": 20,
-        "ate": 0,
-        "cjm": 20
-      },
-      {
         "color": "NEGRO",
         "cantidad": 8,
         "ate": 0,
         "cjm": 8
+      },
+      {
+        "color": "ROJO",
+        "cantidad": 20,
+        "ate": 0,
+        "cjm": 20
+      }
+    ]
+  },
+  {
+    "modelo": "VIPER 150 NKD",
+    "colores": [
+      {
+        "color": "NEG-ANAR",
+        "cantidad": 6,
+        "ate": 0,
+        "cjm": 6
       }
     ]
   }
