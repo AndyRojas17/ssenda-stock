@@ -4,21 +4,21 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 29,
+        "cantidad": 27,
         "ate": 1,
-        "cjm": 28
+        "cjm": 26
       },
       {
         "color": "NEG-VERD",
-        "cantidad": 21,
+        "cantidad": 19,
         "ate": 1,
-        "cjm": 20
+        "cjm": 18
       },
       {
         "color": "ROJO",
-        "cantidad": 42,
+        "cantidad": 40,
         "ate": 1,
-        "cjm": 41
+        "cjm": 39
       }
     ]
   },
@@ -33,9 +33,9 @@
       },
       {
         "color": "ROJO",
-        "cantidad": 14,
+        "cantidad": 4,
         "ate": 2,
-        "cjm": 12
+        "cjm": 2
       }
     ]
   },
@@ -61,9 +61,9 @@
     "colores": [
       {
         "color": "NRG-ROJ",
-        "cantidad": 7,
+        "cantidad": 6,
         "ate": 1,
-        "cjm": 6
+        "cjm": 5
       },
       {
         "color": "ROJ-BLAN",
@@ -101,9 +101,9 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 19,
+        "cantidad": 15,
         "ate": 2,
-        "cjm": 17
+        "cjm": 13
       }
     ]
   },
@@ -140,9 +140,9 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 48,
+        "cantidad": 46,
         "ate": 1,
-        "cjm": 47
+        "cjm": 45
       },
       {
         "color": "ROJO",
@@ -271,9 +271,9 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 8,
+        "cantidad": 7,
         "ate": 2,
-        "cjm": 6
+        "cjm": 5
       },
       {
         "color": "GRIS",
@@ -362,15 +362,15 @@
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 3,
+        "cantidad": 2,
         "ate": 1,
-        "cjm": 2
+        "cjm": 1
       },
       {
         "color": "NEGR-VER",
-        "cantidad": 19,
+        "cantidad": 18,
         "ate": 1,
-        "cjm": 18
+        "cjm": 17
       },
       {
         "color": "NEGR-ANA",
@@ -436,9 +436,9 @@
       },
       {
         "color": "NEGRO",
-        "cantidad": 8,
+        "cantidad": 7,
         "ate": 3,
-        "cjm": 5
+        "cjm": 4
       }
     ]
   },
@@ -447,9 +447,9 @@
     "colores": [
       {
         "color": "NEGR-AMA",
-        "cantidad": 4,
+        "cantidad": 3,
         "ate": 0,
-        "cjm": 4
+        "cjm": 3
       },
       {
         "color": "NEGR-ROJ",
@@ -508,16 +508,10 @@
     "modelo": "SS250ZH-AGUA",
     "colores": [
       {
-        "color": "",
-        "cantidad": 1,
-        "ate": 0,
-        "cjm": 1
-      },
-      {
         "color": "ROJO",
-        "cantidad": 12,
+        "cantidad": 11,
         "ate": 0,
-        "cjm": 12
+        "cjm": 11
       }
     ]
   },
@@ -560,9 +554,9 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 23,
+        "cantidad": 22,
         "ate": 0,
-        "cjm": 23
+        "cjm": 22
       },
       {
         "color": "ROJO",
