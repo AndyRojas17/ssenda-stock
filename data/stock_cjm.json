@@ -4,15 +4,15 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 28
+        "cantidad": 26
       },
       {
         "color": "NEG-VERD",
-        "cantidad": 20
+        "cantidad": 18
       },
       {
         "color": "ROJO",
-        "cantidad": 41
+        "cantidad": 39
       }
     ]
   },
@@ -25,7 +25,7 @@
       },
       {
         "color": "ROJO",
-        "cantidad": 12
+        "cantidad": 2
       }
     ]
   },
@@ -51,7 +51,7 @@
       },
       {
         "color": "NRG-ROJ",
-        "cantidad": 6
+        "cantidad": 5
       },
       {
         "color": "ROJ-BLAN",
@@ -64,7 +64,7 @@
     "colores": [
       {
         "color": "NEGR-AMA",
-        "cantidad": 4
+        "cantidad": 3
       },
       {
         "color": "NEGR-ROJ",
@@ -94,7 +94,7 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 17
+        "cantidad": 13
       }
     ]
   },
@@ -125,7 +125,7 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 47
+        "cantidad": 45
       },
       {
         "color": "ROJO",
@@ -216,7 +216,7 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 6
+        "cantidad": 5
       },
       {
         "color": "GRIS",
@@ -289,12 +289,8 @@
     "modelo": "SS250ZH-AGUA",
     "colores": [
       {
-        "color": "",
-        "cantidad": 1
-      },
-      {
         "color": "ROJO",
-        "cantidad": 12
+        "cantidad": 11
       }
     ]
   },
@@ -324,11 +320,11 @@
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 2
+        "cantidad": 1
       },
       {
         "color": "NEGR-VER",
-        "cantidad": 18
+        "cantidad": 17
       }
     ]
   },
@@ -350,7 +346,7 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 23
+        "cantidad": 22
       },
       {
         "color": "ROJO",
@@ -406,7 +402,7 @@
       },
       {
         "color": "NEGRO",
-        "cantidad": 5
+        "cantidad": 4
       }
     ]
   }
