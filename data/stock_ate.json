@@ -25,7 +25,7 @@
       },
       {
         "color": "ROJO",
-        "cantidad": 3
+        "cantidad": 2
       }
     ]
   },
@@ -100,7 +100,7 @@
       },
       {
         "color": "ROJO",
-        "cantidad": 2
+        "cantidad": 1
       }
     ]
   },
@@ -140,6 +140,15 @@
     ]
   },
   {
+    "modelo": "PATAGONIA 169",
+    "colores": [
+      {
+        "color": "VERDE",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
     "modelo": "PATAGONIA 250V8",
     "colores": [
       {
@@ -157,11 +166,11 @@
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 2
+        "cantidad": 1
       },
       {
         "color": "NGR-RJ",
-        "cantidad": 2
+        "cantidad": 1
       }
     ]
   },
