@@ -100,8 +100,8 @@
     "colores": [
       {
         "color": "NEG-AZUL",
-        "cantidad": 41,
-        "ate": 2,
+        "cantidad": 40,
+        "ate": 1,
         "cjm": 39
       },
       {
@@ -141,35 +141,12 @@
     ]
   },
   {
-    "modelo": "LEO 125-N RALLY",
-    "colores": [
-      {
-        "color": "ROJ-NEGR",
-        "cantidad": -7,
-        "ate": 1,
-        "cjm": -8
-      },
-      {
-        "color": "NEGRO-GR",
-        "cantidad": 13,
-        "ate": 0,
-        "cjm": 13
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": -10,
-        "ate": 0,
-        "cjm": -10
-      }
-    ]
-  },
-  {
     "modelo": "MATRIX VIII 150",
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 3,
-        "ate": 3,
+        "cantidad": 2,
+        "ate": 2,
         "cjm": 0
       }
     ]
@@ -194,17 +171,6 @@
         "cantidad": 56,
         "ate": 1,
         "cjm": 55
-      }
-    ]
-  },
-  {
-    "modelo": "PATAGONIA 169",
-    "colores": [
-      {
-        "color": "VERDE",
-        "cantidad": 1,
-        "ate": 1,
-        "cjm": 0
       }
     ]
   },
@@ -236,8 +202,8 @@
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 33,
-        "ate": 1,
+        "cantidad": 32,
+        "ate": 0,
         "cjm": 32
       },
       {
@@ -455,6 +421,29 @@
         "cantidad": 1,
         "ate": 0,
         "cjm": 1
+      }
+    ]
+  },
+  {
+    "modelo": "LEO 125-N RALLY",
+    "colores": [
+      {
+        "color": "NEGRO-GR",
+        "cantidad": 13,
+        "ate": 0,
+        "cjm": 13
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": -10,
+        "ate": 0,
+        "cjm": -10
+      },
+      {
+        "color": "ROJ-NEGR",
+        "cantidad": -8,
+        "ate": 0,
+        "cjm": -8
       }
     ]
   },
