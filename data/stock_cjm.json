@@ -1,44 +1,14 @@
 [
   {
-    "modelo": "200X7SR",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 26
-      },
-      {
-        "color": "NEG-VERD",
-        "cantidad": 18
-      },
-      {
-        "color": "ROJO",
-        "cantidad": 39
-      }
-    ]
-  },
-  {
-    "modelo": "CHACARERA 200",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 2
-      },
-      {
-        "color": "ROJO",
-        "cantidad": 2
-      }
-    ]
-  },
-  {
     "modelo": "DURO 150",
     "colores": [
       {
         "color": "NEGR-AZU",
-        "cantidad": 75
+        "cantidad": 65
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 37
+        "cantidad": 27
       }
     ]
   },
@@ -47,15 +17,15 @@
     "colores": [
       {
         "color": "NEGR-AMA",
-        "cantidad": 7
+        "cantidad": 4
       },
       {
         "color": "NRG-ROJ",
-        "cantidad": 5
+        "cantidad": 1
       },
       {
         "color": "ROJ-BLAN",
-        "cantidad": 10
+        "cantidad": 9
       }
     ]
   },
@@ -68,11 +38,24 @@
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 31
+        "cantidad": 29
       },
       {
         "color": "ROJ-BLAN",
-        "cantidad": 28
+        "cantidad": 25
+      }
+    ]
+  },
+  {
+    "modelo": "DURO 250",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 39
+      },
+      {
+        "color": "NEGR-ROJ",
+        "cantidad": 30
       }
     ]
   },
@@ -81,20 +64,20 @@
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 47
+        "cantidad": 33
       },
       {
         "color": "NEGRO",
-        "cantidad": 7
+        "cantidad": -8
       }
     ]
   },
   {
-    "modelo": "ECO FINITI 150",
+    "modelo": "F250",
     "colores": [
       {
-        "color": "ROJO",
-        "cantidad": 13
+        "color": "NGR",
+        "cantidad": 1
       }
     ]
   },
@@ -103,20 +86,11 @@
     "colores": [
       {
         "color": "NEG-AZUL",
-        "cantidad": 53
+        "cantidad": 39
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 57
-      }
-    ]
-  },
-  {
-    "modelo": "GOL 125",
-    "colores": [
-      {
-        "color": "GRIS",
-        "cantidad": 1
+        "cantidad": 49
       }
     ]
   },
@@ -125,11 +99,11 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 45
+        "cantidad": 34
       },
       {
         "color": "ROJO",
-        "cantidad": 45
+        "cantidad": 38
       }
     ]
   },
@@ -138,15 +112,15 @@
     "colores": [
       {
         "color": "NEGRO-GR",
-        "cantidad": 34
+        "cantidad": 13
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 10
+        "cantidad": -10
       },
       {
         "color": "ROJ-NEGR",
-        "cantidad": 4
+        "cantidad": -8
       }
     ]
   },
@@ -164,24 +138,15 @@
     ]
   },
   {
-    "modelo": "PATAGONIA 169",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 1
-      }
-    ]
-  },
-  {
     "modelo": "PATAGONIA 250V8",
     "colores": [
       {
         "color": "GRIS",
-        "cantidad": 11
+        "cantidad": 4
       },
       {
         "color": "NEGRO",
-        "cantidad": 15
+        "cantidad": 11
       }
     ]
   },
@@ -190,41 +155,15 @@
     "colores": [
       {
         "color": "GRI-ANRJ",
-        "cantidad": 45
+        "cantidad": 43
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 35
+        "cantidad": 32
       },
       {
         "color": "NGR-RJ",
-        "cantidad": 74
-      }
-    ]
-  },
-  {
-    "modelo": "RVS 150",
-    "colores": [
-      {
-        "color": "ROJO",
-        "cantidad": 1
-      }
-    ]
-  },
-  {
-    "modelo": "RVS 175 EFI",
-    "colores": [
-      {
-        "color": "AZUL",
-        "cantidad": 5
-      },
-      {
-        "color": "GRIS",
-        "cantidad": 6
-      },
-      {
-        "color": "NEGRO",
-        "cantidad": 10
+        "cantidad": 68
       }
     ]
   },
@@ -233,29 +172,7 @@
     "colores": [
       {
         "color": "RJ-NG-BR",
-        "cantidad": 14
-      }
-    ]
-  },
-  {
-    "modelo": "SANTANA 250",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 2
-      }
-    ]
-  },
-  {
-    "modelo": "SS200-X7",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 1
-      },
-      {
-        "color": "NEG-ROJ",
-        "cantidad": 3
+        "cantidad": 11
       }
     ]
   },
@@ -264,11 +181,11 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 21
+        "cantidad": 15
       },
       {
         "color": "ROJO",
-        "cantidad": 16
+        "cantidad": 12
       }
     ]
   },
@@ -277,11 +194,11 @@
     "colores": [
       {
         "color": "NEGRO",
-        "cantidad": 50
+        "cantidad": 43
       },
       {
         "color": "ROJO",
-        "cantidad": 46
+        "cantidad": 32
       }
     ]
   },
@@ -290,20 +207,7 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 11
-      }
-    ]
-  },
-  {
-    "modelo": "SS300-ATV",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 8
-      },
-      {
-        "color": "ROJO",
-        "cantidad": 10
+        "cantidad": 9
       }
     ]
   },
@@ -312,19 +216,15 @@
     "colores": [
       {
         "color": "NEG-ANAR",
-        "cantidad": 2
+        "cantidad": -2
       },
       {
         "color": "NEGR-ANA",
-        "cantidad": 33
-      },
-      {
-        "color": "NEGR-ROJ",
-        "cantidad": 1
+        "cantidad": 28
       },
       {
         "color": "NEGR-VER",
-        "cantidad": 17
+        "cantidad": 12
       }
     ]
   },
@@ -333,7 +233,7 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 25
+        "cantidad": 23
       },
       {
         "color": "ROJO",
@@ -346,11 +246,11 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 22
+        "cantidad": 18
       },
       {
         "color": "ROJO",
-        "cantidad": 23
+        "cantidad": 22
       }
     ]
   },
@@ -359,24 +259,15 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 20
+        "cantidad": 17
       },
       {
         "color": "NEGRO",
-        "cantidad": 8
+        "cantidad": 7
       },
       {
         "color": "ROJO",
-        "cantidad": 20
-      }
-    ]
-  },
-  {
-    "modelo": "SWEET 125",
-    "colores": [
-      {
-        "color": "NEGRO",
-        "cantidad": 1
+        "cantidad": 19
       }
     ]
   },
@@ -385,24 +276,11 @@
     "colores": [
       {
         "color": "NEG-ANAR",
-        "cantidad": 6
-      }
-    ]
-  },
-  {
-    "modelo": "VIPER 200 NKS",
-    "colores": [
-      {
-        "color": "BLC-ANAR",
-        "cantidad": 4
-      },
-      {
-        "color": "NEGR-ANA",
-        "cantidad": 6
+        "cantidad": 35
       },
       {
         "color": "NEGRO",
-        "cantidad": 4
+        "cantidad": 56
       }
     ]
   }
