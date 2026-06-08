@@ -74,7 +74,7 @@
     "colores": [
       {
         "color": "NEG-AZUL",
-        "cantidad": 2
+        "cantidad": 1
       },
       {
         "color": "NEGR-ROJ",
@@ -105,20 +105,11 @@
     ]
   },
   {
-    "modelo": "LEO 125-N RALLY",
-    "colores": [
-      {
-        "color": "ROJ-NEGR",
-        "cantidad": 1
-      }
-    ]
-  },
-  {
     "modelo": "MATRIX VIII 150",
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 3
+        "cantidad": 2
       }
     ]
   },
@@ -135,15 +126,6 @@
       },
       {
         "color": "NGR-VRD",
-        "cantidad": 1
-      }
-    ]
-  },
-  {
-    "modelo": "PATAGONIA 169",
-    "colores": [
-      {
-        "color": "VERDE",
         "cantidad": 1
       }
     ]
@@ -166,7 +148,7 @@
       },
       {
         "color": "NG-BL-AN",
-        "cantidad": 1
+        "cantidad": 0
       },
       {
         "color": "NGR-RJ",
