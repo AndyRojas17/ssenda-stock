@@ -3,12 +3,6 @@
     "modelo": "200X7SR",
     "colores": [
       {
-        "color": "NEGRO",
-        "cantidad": 27,
-        "ate": 1,
-        "cjm": 26
-      },
-      {
         "color": "NEG-VERD",
         "cantidad": 19,
         "ate": 1,
@@ -19,6 +13,12 @@
         "cantidad": 40,
         "ate": 1,
         "cjm": 39
+      },
+      {
+        "color": "NEGRO",
+        "cantidad": 26,
+        "ate": 0,
+        "cjm": 26
       }
     ]
   },
@@ -33,8 +33,8 @@
       },
       {
         "color": "ROJO",
-        "cantidad": 4,
-        "ate": 2,
+        "cantidad": 2,
+        "ate": 0,
         "cjm": 2
       }
     ]
@@ -44,14 +44,14 @@
     "colores": [
       {
         "color": "NEGR-AZU",
-        "cantidad": 77,
-        "ate": 2,
+        "cantidad": 76,
+        "ate": 1,
         "cjm": 75
       },
       {
         "color": "NEGR-ROJ",
-        "cantidad": 37,
-        "ate": 0,
+        "cantidad": 38,
+        "ate": 1,
         "cjm": 37
       }
     ]
@@ -84,14 +84,14 @@
     "colores": [
       {
         "color": "BLANCO",
-        "cantidad": 50,
-        "ate": 3,
+        "cantidad": 49,
+        "ate": 2,
         "cjm": 47
       },
       {
         "color": "NEGRO",
-        "cantidad": 7,
-        "ate": 0,
+        "cantidad": 9,
+        "ate": 2,
         "cjm": 7
       }
     ]
@@ -101,8 +101,8 @@
     "colores": [
       {
         "color": "ROJO",
-        "cantidad": 15,
-        "ate": 2,
+        "cantidad": 20,
+        "ate": 7,
         "cjm": 13
       }
     ]
@@ -129,8 +129,8 @@
     "colores": [
       {
         "color": "AZUL MET",
-        "cantidad": 10,
-        "ate": 10,
+        "cantidad": 6,
+        "ate": 6,
         "cjm": 0
       }
     ]
@@ -271,14 +271,14 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 7,
-        "ate": 2,
+        "cantidad": 6,
+        "ate": 1,
         "cjm": 5
       },
       {
         "color": "GRIS",
-        "cantidad": 9,
-        "ate": 3,
+        "cantidad": 8,
+        "ate": 2,
         "cjm": 6
       },
       {
@@ -321,16 +321,22 @@
     "modelo": "SS200-X7",
     "colores": [
       {
-        "color": "NEG-ROJ",
-        "cantidad": 4,
+        "color": "NEGRO",
+        "cantidad": 2,
         "ate": 1,
+        "cjm": 1
+      },
+      {
+        "color": "NEG-ROJ",
+        "cantidad": 6,
+        "ate": 3,
         "cjm": 3
       },
       {
-        "color": "NEGRO",
-        "cantidad": 1,
-        "ate": 0,
-        "cjm": 1
+        "color": "ROJO",
+        "cantidad": 2,
+        "ate": 2,
+        "cjm": 0
       }
     ]
   },
@@ -381,23 +387,6 @@
     ]
   },
   {
-    "modelo": "SWEET 125",
-    "colores": [
-      {
-        "color": "BLANCO",
-        "cantidad": 1,
-        "ate": 1,
-        "cjm": 0
-      },
-      {
-        "color": "NEGRO",
-        "cantidad": 2,
-        "ate": 1,
-        "cjm": 1
-      }
-    ]
-  },
-  {
     "modelo": "TY150T-H",
     "colores": [
       {
@@ -413,8 +402,8 @@
     "colores": [
       {
         "color": "AZUL",
-        "cantidad": 3,
-        "ate": 3,
+        "cantidad": 2,
+        "ate": 2,
         "cjm": 0
       }
     ]
@@ -436,8 +425,8 @@
       },
       {
         "color": "NEGRO",
-        "cantidad": 7,
-        "ate": 3,
+        "cantidad": 6,
+        "ate": 2,
         "cjm": 4
       }
     ]
@@ -586,6 +575,17 @@
         "cantidad": 20,
         "ate": 0,
         "cjm": 20
+      }
+    ]
+  },
+  {
+    "modelo": "SWEET 125",
+    "colores": [
+      {
+        "color": "NEGRO",
+        "cantidad": 1,
+        "ate": 0,
+        "cjm": 1
       }
     ]
   },
